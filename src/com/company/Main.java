@@ -20,7 +20,7 @@ public class Main {
         while (number > 0){
             int digit = number % 10; // каждую следующую цифру заносим в эту переменную
             if (digit == 3) three_amount++;
-            if (digit % 10 == last_digit) last_digit_amount++;
+            if (digit == last_digit) last_digit_amount++;
             sum += digit;
             mult *= digit;
             if (max_digit < digit) max_digit = digit;
